@@ -1,4 +1,6 @@
-
+base:
+  '*':
+    - base
 prod:
   'hub*prod':
     - base
