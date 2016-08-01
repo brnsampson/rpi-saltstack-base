@@ -3,13 +3,13 @@ base:
   '*':
     - base
 prod:
-  'hub*':
+  'hub*prod':
     - hub
 qa:
-  'hub*':
+  'hub*qa':
     - hub
 dev:
-  'hub*':
+  'hub*dev':
     - hub
   'debug*':
-    -hub
+    - hub
