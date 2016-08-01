@@ -1,6 +1,6 @@
 
 prod:
-  'hub*prod'
+  'hub*prod':
     - base
     - hub
 qa:
