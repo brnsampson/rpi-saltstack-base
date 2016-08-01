@@ -2,17 +2,19 @@ base:
   '*':
     - base
 prod:
-  'hub*prod':
+  '*':
     - base
+  'hub*prod':
     - hub
 qa:
-  'hub*qa':
+  '*':
     - base
+  'hub*qa':
     - hub
 dev:
-  'hub*dev':
+  '*':
     - base
+  'hub*dev':
     - hub
   'debug*':
-    - base
     - hub
