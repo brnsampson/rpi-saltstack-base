@@ -1,20 +1,17 @@
 base:
   '*':
     - base
+    - salt.minion
 prod:
   '*prod':
     - base
-  'hub*prod':
-    - hub
+  'seed*':
+    - salt.master
 qa:
   '*qa':
     - base
-  'hub*qa':
-    - hub
 dev:
   '*dev':
     - base
-  'hub*dev':
-    - hub
   'debug*':
-    - hub
+    - debug
