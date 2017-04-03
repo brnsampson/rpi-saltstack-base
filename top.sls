@@ -2,15 +2,14 @@ base:
   '*':
     - base
     - salt.minion
+  'seed*':
+    - salt.master
 prod:
   '*prod':
     - base
-  'seed*':
-    - salt.master
-qa:
-  '*qa':
-    - base
 dev:
+  'seed*':
+    - iptables
   '*dev':
     - base
   'debug*':
