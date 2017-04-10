@@ -6,6 +6,7 @@ base:
     - salt.master
     - salt.formulas
     - dhcpd.config
+    - bind.config
 dev:
   'seed*':
     - iptables
