@@ -4,7 +4,7 @@ base:
     - salt.minion
   'seed*':
     - salt.master
-    - salt.formula
+    - salt.formulas
     - dhcpd.config
 dev:
   'seed*':
