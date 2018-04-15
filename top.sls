@@ -1,12 +1,10 @@
-base:
+infra:
   '*':
     - base
     - salt.minion
-  'seed*':
+  'role:bootstrap':
+    - match: grain
+    - salt.pkgrepo
+    - salt.gitfs.pygit2
     - salt.master
     - salt.formulas
-    - dhcpd.config
-    - bind.config
-dev:
-  'seed*':
-    - iptables
