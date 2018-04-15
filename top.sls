@@ -1,11 +1,8 @@
 base:
   '*':
-    - salt.minion
-    - consul
-infra:
-  '*':
     - base
     - salt.minion
+    - golang
     - consul
     - nomad
   'role:bootstrap':
